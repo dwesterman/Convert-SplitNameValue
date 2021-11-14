@@ -1,5 +1,5 @@
 # Convert-SplitNameValue
-a Set of functions for Converting Data into a SplitNameValue String and vice versa. 
+Is a Set of functions for Converting Data into a SplitNameValue String and vice versa. 
 
 { ConvertTo-SplitNameValue | ConvertFrom-SplitNameValue }
 
