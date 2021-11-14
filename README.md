@@ -3,4 +3,4 @@ A Set of functions for Converting Data into a SplitNameValue String and vice ver
 
 { ConvertTo-SplitNameValue | ConvertFrom-SplitNameValue }
 
-This Is Helpful for Pulling in 1 or more Objects/Arrays into Labtech/Automate
+This Is Also Helpful for Pulling in Data from 1 or more Objects/Arrays into Labtech/Automate.
