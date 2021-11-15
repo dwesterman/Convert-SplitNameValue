@@ -11,7 +11,7 @@ It has 4 useable parameters ( -InputData [psobject], -ObjectMarker [string],-Inc
 
 The -InputData Parameter can be used as a normal parameter with the Data in rounded brackets ( Data ), or you can provide it in the pipeline.
 
-The -ObjectMarker Parameter can be used to choose a custom postfix marker when InputData contains multiple objects or arrays.    
+The -ObjectMarker Parameter can be used to choose a custom postfix marker when InputData contains multiple objects or arrays.<br />    
 The Default ObjectMarker is &lowbar;#
 
 The -Preview Parameter can be used to display the SplitNameValue String output as a "list" (For Debugging/Viewing)"
@@ -54,7 +54,7 @@ It has 2 useable parameters ( -$InputString [string], -ObjectMarker [string] )
 The -InputString Parameter can be used as a normal parameter with the SplitNameValue Formated string in quotes "string" or the pipeline.
 Here is an Exampe of a string in SplitNameValue Format: ( Date=5/19/2005 | Time=11:00 AM | DOW=Wednesday )
 
-The -ObjectMarker Parameter can be used to choose a custom postfix marker when InputData contains multiple objects or arrays.
-Note, You must supply the same custom ObjectMarker found in the InputString (If not using Default) in order to correctly separate objects.
+The -ObjectMarker Parameter can be used to choose a custom postfix marker when InputData contains multiple objects or arrays.<br />
+Note, You must supply the same custom ObjectMarker found in the InputString (If not using Default) in order to correctly separate objects.<br />
 The Default ObjectMarker is &lowbar;# Example with 2 Objects: (ObjectSize=10 | ObjectStatus=True | ObjectSize&lowbar;#2=20 | ObjectStatus&lowbar;#2=False)
 
