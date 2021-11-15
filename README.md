@@ -73,7 +73,6 @@ DOW  : Wednesday
 
 PS C:\Users\%Username%\Desktop> "ObjectSize=10|ObjectStatus=True|ObjectSize_#2=20|ObjectStatus_#2=False" | ConvertFrom-SplitNameValue |format-list
 
-
 ObjectSize   : 10
 ObjectStatus : True
 
