@@ -46,8 +46,9 @@ Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600|Is
 ```
 
 # Function "ConvertFrom-SplitNameValue"
-This function is used to convert a SplitNameValue String into one or more objects.<br />
-It has 2 useable parameters ( -$InputString [string], -ObjectMarker [string] )
+This function is used to convert one or more SplitNameValue Strings, into one or more objects.<br />
+While you can input more then one SplitNameValue String at a time I do not recommend it because it will combine the output and may be confusing.
+It has 2 useable parameters ( -$InputString [string[]], -ObjectMarker [string] )
 
 The -InputString Parameter can be used as a normal parameter with the SplitNameValue Formated string in quotes "string" or the pipeline.
 Here is an Exampe of a string in SplitNameValue Format: 
