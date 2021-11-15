@@ -97,7 +97,8 @@ IsBoot     : False
 
 ```
 ```
-PS C:\Users\%Username%> ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV) | format-list
+PS C:\Users\%Username%> $example = ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV)
+PS C:\Users\%Username%> $example | format-list
 
 size : small
 cost : 14.00
@@ -105,11 +106,11 @@ cost : 14.00
 size : large
 cost : 15.50
 
-PS C:\Users\%Username%> ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV).size
+PS C:\Users\%Username%> $example.size
 small
 large
 
-PS C:\Users\%Username%> ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV).cost[0]
+PS C:\Users\%Username%> $example.cost[0]
 14.00
 
 ```
