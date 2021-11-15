@@ -62,7 +62,7 @@ The Default ObjectMarker is &lowbar;# Example with 2 Objects:
 ```
 ObjectSize=10|ObjectStatus=True|ObjectSize_#2=20|ObjectStatus_#2=False
 ```
-Here is en example of the Output:
+Here is en example of some Output:
 
 ```
 PS C:\Users\%Username%\Desktop> "Date=5/19/2005|Time=11:00 AM|DOW=Wednesday" | ConvertFrom-SplitNameValue |format-list
