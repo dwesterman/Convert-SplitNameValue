@@ -29,6 +29,10 @@
       Write-Output "Info: You can use the '-Preview' parameter to display the SplitNameValue Output as a list (For Debugging/Viewing)"
       Write-Output "Info: You can use the '-ObjectMarker' parameter to choose a custom postfix marker when InputData contains multiple objects or arrays."
       Write-Output "Info: The Default ObjectMarker is '_#' Example with 2 Objects: ( ObjectSize=10 | ObjectStatus=True | ObjectSize_#2=20 | ObjectStatus_#2=False )"
+      Write-Output ""
+      write-Output "The -DisableObjectMarkers Parameter can be used to Stop the separation of multiple objects,"
+      write-Output "But be WARNED this will cause weird overwritten/mangled objects to be generated if any objects data has the same name as another objects data,"
+      write-Output "On the other hand if you know all the objects data has different names then you could combine them into one object by doing this."
       break
     }
 
