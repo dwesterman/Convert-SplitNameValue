@@ -7,11 +7,14 @@ This is helpful for pulling in data from one or more objects/arrays and automati
 Aliases: ConvertTo-SplitNameValue, CT-SNV, ConvertTo-SNV, CT-SplitNameValue <br />
 
 This function is used to convert data containing one or more objects or arrays into a SplitNameValue String.<br />
-It has 4 useable parameters ( -InputData [psobject], -ObjectMarker [string],-IncludeNull [switch],-Preview [switch] )
+It has 4 useable parameters ( -InputData [psobject], -ObjectMarker [string], -DisableObjectMarkers [switch], -IncludeNull [switch],-Preview [switch] )
 
-The -InputData Parameter can be used as a normal parameter with the Data in rounded brackets ( Data ), or you can provide it in the pipeline.
+The -InputData Parameter can be used as a normal parameter with the Data in rounded brackets ( Data ), or you can provide it in the pipeline. 
+Also Note that you can Have more then one InputData in the pipeline separated by , Exampe: Data1, Data2 | CT-SNV
 
 The -ObjectMarker Parameter can be used to choose a custom postfix marker when InputData contains multiple objects or arrays. The Default ObjectMarker is &lowbar;#
+
+The -DisableObjectMarkers Parameter can be used to Stop the separation of multiple objects, but be WARNED this will cause weird overwritten/mangled objects to be generated if any objects data has the same name as another objects data. On the other hand if you know all the objects data has different names then you could combine them into one object by doing this.
 
 The -Preview Parameter can be used to display the SplitNameValue String output as a "list" (For Debugging/Viewing)"
 
