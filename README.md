@@ -5,7 +5,7 @@ Is a Set of functions for Converting Data into a SplitNameValue String and vice 
 
 This is helpful for pulling in data from one or more objects/arrays and automatically setting that data to Labtech/Automate variables by using "Variable Set: Split NameValue Parameter". It could also be used to save objects to a text file and pull them back out again and still be able to intract with the objects like normal, and It makes creating new objects easy.
 
-# ConvertTo-SplitNameValue
+# Function "ConvertTo-SplitNameValue"
 This function is used to convert data containing one or more objects or arrays into a SplitNameValue String.<br />
 It has 4 parameters ( -InputData [psobject], -ObjectMarker [string],-IncludeNull [switch],-Preview [switch] )
 
