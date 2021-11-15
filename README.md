@@ -47,6 +47,6 @@ Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600|Is
 
 ```
 
-# ConvertFrom-SplitNameValue
+# Function "ConvertFrom-SplitNameValue"
 
 Here is a SplitNameValue Format Exampe: ( Date=5/19/2005 | Time=11:00 AM | DOW=Wednesday )
