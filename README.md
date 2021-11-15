@@ -9,7 +9,7 @@ This is helpful for pulling in data from one or more objects/arrays and automati
 This function is used to convert data containing one or more objects or arrays into a SplitNameValue String.<br />
 It has 4 parameters ( -InputData [psobject], -ObjectMarker [string],-IncludeNull [switch],-Preview [switch] )
 
-The -InputData Parameter can be used as a normal parameter with the Data in rounded brackets ( Data ), or you can provide it in the pipeline.<br />
+The -InputData Parameter can be used as a normal parameter with the Data in rounded brackets ( Data ), or you can provide it in the pipeline.<br /><br />
 Here is en example of some InputData:
 ```
 PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot
@@ -28,6 +28,13 @@ Size       : 16777216
 IsReadOnly : 
 IsSystem   : False
 IsBoot     : False
+
+```
+
+```
+PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot | ConvertTo-SplitNameValue
+
+Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_2=104857600|IsSystem_2=True|IsBoot_2=False|Size_3=16777216|IsSystem_3=False|IsBoot_3=False
 
 ```
 
