@@ -71,7 +71,8 @@ Date : 5/19/2005
 Time : 11:00 AM
 DOW  : Wednesday
 
-PS C:\Users\%Username%\Desktop> "ObjectSize=10|ObjectStatus=True|ObjectSize_#2=20|ObjectStatus_#2=False" | ConvertFrom-SplitNameValue |format-list
+PS C:\Users\%Username%\Desktop> "ObjectSize=10|ObjectStatus=True|ObjectSize_#2=20
+|ObjectStatus_#2=False" | ConvertFrom-SplitNameValue |format-list
 
 ObjectSize   : 10
 ObjectStatus : True
@@ -79,8 +80,8 @@ ObjectStatus : True
 ObjectSize   : 20
 ObjectStatus : False
 
-PS C:\Users\%Username%\Desktop> "Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600|IsSystem_#2=True|IsBoot_#2=False
-|Size_#3=16777216|IsSystem_#3=False|IsBoot_#3=False" | ConvertFrom-SplitNameValue | format-list
+PS C:\Users\%Username%\Desktop> "Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600
+|IsSystem_#2=True|IsBoot_#2=False|Size_#3=16777216|IsSystem_#3=False|IsBoot_#3=False" | ConvertFrom-SplitNameValue | format-list
 
 Size       : 554696704
 IsReadOnly : False
