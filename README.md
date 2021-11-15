@@ -97,7 +97,7 @@ IsBoot     : False
 
 ```
 ```
-PS C:\Users\%Username%> $example = ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV)
+PS C:\Users\%Username%> $example = "size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV
 PS C:\Users\%Username%> $example | format-list
 
 size : small
