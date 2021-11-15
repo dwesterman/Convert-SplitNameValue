@@ -96,3 +96,20 @@ IsSystem   : False
 IsBoot     : False
 
 ```
+```
+PS C:\Users\%Username%> ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV) | format-list
+
+size : small
+cost : 14.00
+
+size : large
+cost : 15.50
+
+PS C:\Users\%Username%> ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV).size
+small
+large
+
+PS C:\Users\%Username%> ("size=small|cost=14.00|size_#2=large|cost_#2=15.50" | CF-SNV).cost[0]
+14.00
+
+```
