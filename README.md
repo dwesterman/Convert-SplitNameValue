@@ -34,8 +34,8 @@ Here is en example of the Output:
 ```
 PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot | ConvertTo-SplitNameValue
 
-Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_2=104857600|IsSystem_2=True|IsBoot_2=False
-|Size_3=16777216|IsSystem_3=False|IsBoot_3=False
+Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600|IsSystem_#2=True|IsBoot_#2=False
+|Size_#3=16777216|IsSystem_#3=False|IsBoot_#3=False
 
 ```
 
