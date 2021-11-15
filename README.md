@@ -7,6 +7,7 @@ This is helpful for pulling in data from one or more objects/arrays and automati
 
 # Function "ConvertTo-SplitNameValue"
 Aliases: ConvertTo-SplitNameValue, CT-SNV, ConvertTo-SNV, CT-SplitNameValue <br />
+
 This function is used to convert data containing one or more objects or arrays into a SplitNameValue String.<br />
 It has 4 useable parameters ( -InputData [psobject], -ObjectMarker [string],-IncludeNull [switch],-Preview [switch] )
 
@@ -48,6 +49,7 @@ Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600|Is
 
 # Function "ConvertFrom-SplitNameValue"
 Aliases: ConvertFrom-SplitNameValue, CF-SNV, ConvertFrom-SNV, CF-SplitNameValue <br />
+
 This function is used to convert one or more SplitNameValue Strings, into one or more objects.<br />
 While you can input more then one SplitNameValue String at a time I do not recommend it because it will combine the output and may be confusing.<br />
 It has 2 useable parameters ( -$InputString [string[]], -ObjectMarker [string] )
