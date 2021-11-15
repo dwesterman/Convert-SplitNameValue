@@ -1,9 +1,5 @@
 function ConvertTo-SplitNameValue {
 
-  [alias("CT-SNV")]
-  [alias("ConvertTo-SNV")]
-  [alias("CT-SplitNameValue")]
-
   param(
     [Parameter(Mandatory = $false,ValueFromPipeLine = $true)]
     [psobject]$InputData,
@@ -89,10 +85,6 @@ function ConvertTo-SplitNameValue {
 
 function ConvertFrom-SplitNameValue {
 
-  [alias("CF-SNV")]
-  [alias("ConvertFrom-SNV")]
-  [alias("CF-SplitNameValue")]
-
   param(
     [Parameter(Mandatory = $false,ValueFromPipeLine = $true)]
     [string[]]$InputString,
@@ -163,3 +155,13 @@ function ConvertFrom-SplitNameValue {
     }
   }
 }
+
+Set-Alias CT-SNV ConvertTo-SplitNameValue
+Set-Alias ConvertTo-SNV ConvertTo-SplitNameValue
+Set-Alias CT-SplitNameValue ConvertTo-SplitNameValue
+
+Set-Alias CF-SNV ConvertFrom-SplitNameValue
+Set-Alias ConvertFrom-SNV ConvertFrom-SplitNameValue
+Set-Alias CF-SplitNameValue ConvertFrom-SplitNameValue
+
+Export-ModuleMember -Function ConvertTo-SplitNameValue, ConvertFrom-SplitNameValue -Alias CT-SNV, ConvertTo-SNV, CT-SplitNameValue, CF-SNV, ConvertFrom-SNV, CF-SplitNameValue
