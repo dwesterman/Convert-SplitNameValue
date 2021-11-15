@@ -18,7 +18,7 @@ The -DisableObjectMarkers Parameter can be used to Stop the separation of multip
 
 The -Preview Parameter can be used to display the SplitNameValue String output as a "list" (For Debugging/Viewing)"
 
-The -IncludeNull Parameter can be used to output ALL object or array data even if it is null"
+The -IncludeNull Parameter can be used to output ALL object or array data even if it is null
 
 Here is an example of some InputData:
 ```
