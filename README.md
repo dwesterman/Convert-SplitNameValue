@@ -17,7 +17,7 @@ The -Preview Parameter can be used to display the SplitNameValue String output a
 
 The -IncludeNull Parameter can be used to output ALL object or array data even if it is null"
 
-Here is en example of some InputData:
+Here is an example of some InputData:
 ```
 PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot
 
@@ -37,7 +37,7 @@ IsSystem   : False
 IsBoot     : False
 
 ```
-Here is en example of the Output:
+Here is en example of the SplitNameValue String Output:
 ```
 PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot | ConvertTo-SplitNameValue
 
