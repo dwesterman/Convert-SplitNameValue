@@ -79,4 +79,20 @@ ObjectStatus : True
 ObjectSize   : 20
 ObjectStatus : False
 
+PS C:\Users\%Username%\Desktop> "Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_#2=104857600|IsSystem_#2=True|IsBoot_#2=False
+|Size_#3=16777216|IsSystem_#3=False|IsBoot_#3=False" | ConvertFrom-SplitNameValue | format-list
+
+Size       : 554696704
+IsReadOnly : False
+IsSystem   : False
+IsBoot     : False
+
+Size       : 104857600
+IsSystem   : True
+IsBoot     : False
+           
+Size       : 16777216
+IsSystem   : False
+IsBoot     : False
+
 ```
