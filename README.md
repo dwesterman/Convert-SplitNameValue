@@ -54,11 +54,31 @@ It has 2 useable parameters ( -$InputString [string], -ObjectMarker [string] )
 The -InputString Parameter can be used as a normal parameter with the SplitNameValue Formated string in quotes "string" or the pipeline.
 Here is an Exampe of a string in SplitNameValue Format: 
 ```
-Date=5/19/2005 | Time=11:00 AM | DOW=Wednesday
+Date=5/19/2005|Time=11:00 AM|DOW=Wednesday
 ```
 The -ObjectMarker Parameter can be used to choose a custom postfix marker when the InputString contains multiple objects or arrays.<br />
 Note, You must supply the same custom ObjectMarker found in the InputString (If not using Default) in order to correctly separate objects.<br />
 The Default ObjectMarker is &lowbar;# Example with 2 Objects: 
 ```
-ObjectSize=10 | ObjectStatus=True | ObjectSize_#2=20 | ObjectStatus_#2=False
+ObjectSize=10|ObjectStatus=True|ObjectSize_#2=20|ObjectStatus_#2=False
+```
+Here is en example of the Output:
+
+```
+PS C:\Users\%Username%\Desktop> "Date=5/19/2005|Time=11:00 AM|DOW=Wednesday" | ConvertFrom-SplitNameValue |format-list
+
+
+Date : 5/19/2005
+Time : 11:00 AM
+DOW  : Wednesday
+
+PS C:\Users\%Username%\Desktop> "ObjectSize=10|ObjectStatus=True|ObjectSize_#2=20|ObjectStatus_#2=False" | ConvertFrom-SplitNameValue |format-list
+
+
+ObjectSize   : 10
+ObjectStatus : True
+
+ObjectSize   : 20
+ObjectStatus : False
+
 ```
