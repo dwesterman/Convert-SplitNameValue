@@ -1,4 +1,4 @@
-# Convert-SplitNameValue
+# Convert-SplitNameValue (Script / Module [WIP])
 Is a Set of functions for Converting Data into a SplitNameValue String and vice versa. 
 
 { ConvertTo-SplitNameValue | ConvertFrom-SplitNameValue }
