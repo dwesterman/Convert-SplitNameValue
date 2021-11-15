@@ -67,7 +67,6 @@ Here is en example of the Output:
 ```
 PS C:\Users\%Username%\Desktop> "Date=5/19/2005|Time=11:00 AM|DOW=Wednesday" | ConvertFrom-SplitNameValue |format-list
 
-
 Date : 5/19/2005
 Time : 11:00 AM
 DOW  : Wednesday
