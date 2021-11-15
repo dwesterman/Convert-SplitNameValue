@@ -30,7 +30,7 @@ IsSystem   : False
 IsBoot     : False
 
 ```
-
+Here is en example of the Output:
 ```
 PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot | ConvertTo-SplitNameValue
 
