@@ -1,4 +1,8 @@
-﻿function ConvertTo-SplitNameValue {
+function ConvertTo-SplitNameValue {
+
+  [alias("CT-SNV")]
+  [alias("ConvertTo-SNV")]
+  [alias("CT-SplitNameValue")]
 
   param(
     [Parameter(Mandatory = $false,ValueFromPipeLine = $true)]
@@ -84,6 +88,10 @@
 }
 
 function ConvertFrom-SplitNameValue {
+
+  [alias("CF-SNV")]
+  [alias("ConvertFrom-SNV")]
+  [alias("CF-SplitNameValue")]
 
   param(
     [Parameter(Mandatory = $false,ValueFromPipeLine = $true)]
