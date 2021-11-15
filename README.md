@@ -34,7 +34,8 @@ IsBoot     : False
 ```
 PS C:\Users\%Username%\Desktop> Get-Partition | select Size, IsReadOnly, IsSystem , IsBoot | ConvertTo-SplitNameValue
 
-Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_2=104857600|IsSystem_2=True|IsBoot_2=False|Size_3=16777216|IsSystem_3=False|IsBoot_3=False
+Size=554696704|IsReadOnly=False|IsSystem=False|IsBoot=False|Size_2=104857600|IsSystem_2=True|IsBoot_2=False
+|Size_3=16777216|IsSystem_3=False|IsBoot_3=False
 
 ```
 
