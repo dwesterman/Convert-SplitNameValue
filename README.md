@@ -60,5 +60,5 @@ The -ObjectMarker Parameter can be used to choose a custom postfix marker when t
 Note, You must supply the same custom ObjectMarker found in the InputString (If not using Default) in order to correctly separate objects.<br />
 The Default ObjectMarker is &lowbar;# Example with 2 Objects: 
 ```
-ObjectSize=10 | ObjectStatus=True | ObjectSize&lowbar;#2=20 | ObjectStatus&lowbar;#2=False
+ObjectSize=10 | ObjectStatus=True | ObjectSize_#2=20 | ObjectStatus_#2=False
 ```
