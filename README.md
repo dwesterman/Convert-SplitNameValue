@@ -3,7 +3,7 @@ Is a Set of functions for Converting Data into a SplitNameValue String and vice 
 
 This is helpful for pulling in data from one or more objects/arrays and automatically setting that data to Labtech/Automate variables by using "Variable Set: Split NameValue Parameter". It could also be used to save objects to a text file and pull them back out again and still be able to intract with the objects like normal, You could also use it to combine multiple objects into one, or to make new objects using a string.
 
-Here's a One-liner you can use to pull the latest version of the module temporarily for your current session.
+Here's a One-liner you can use to pull in the latest version of the module temporarily in your current session.
 
 ```
 New-Module -Name Convert-SplitNameValue -ScriptBlock ([Scriptblock]::Create(([System.IO.StreamReader]((([System.Net.WebRequest]::CreateHttp("https://gitcdn.link/cdn/AlecMcCutcheon/Convert-SplitNameValue/main/Convert-SplitNameValue.psm1")).GetResponse()).GetResponseStream())).ReadToEnd()))
