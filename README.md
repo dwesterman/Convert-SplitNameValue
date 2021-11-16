@@ -6,9 +6,7 @@ This is helpful for pulling in data from one or more objects/arrays and automati
 Here is some code you can use to pull the latest version of the module temporarily for your current session.
 
 ```
-$Raw = (([System.Net.WebRequest]::CreateHttp("https://gitcdn.link/cdn/AlecMcCutcheon/Convert-SplitNameValue/main/Convert-SplitNameValue.psm1")).GetResponse()).GetResponseStream(); 
-$ScriptData = [Scriptblock]::Create(([System.IO.StreamReader]$Raw).ReadToEnd()); 
-New-Module -Name Convert-SplitNameValue -ScriptBlock $ScriptData   
+New-Module -Name Convert-SplitNameValue -ScriptBlock ([Scriptblock]::Create(([System.IO.StreamReader]((([System.Net.WebRequest]::CreateHttp("https://gitcdn.link/cdn/AlecMcCutcheon/Convert-SplitNameValue/main/Convert-SplitNameValue.psm1")).GetResponse()).GetResponseStream())).ReadToEnd()))
 ```
 
 # Function "ConvertTo-SplitNameValue"
