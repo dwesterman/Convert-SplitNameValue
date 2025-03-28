@@ -6,7 +6,7 @@ This is helpful for pulling in data from one or more objects/arrays and automati
 Here's a One-liner you can use to pull in the latest version of the module temporarily in your current session.
 
 ```
-New-Module -Name Convert-SplitNameValue -ScriptBlock ([Scriptblock]::Create((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/AlecMcCutcheon/Convert-SplitNameValue/main/Convert-SplitNameValue.psm1")))
+New-Module -Name Convert-SplitNameValue -ScriptBlock ([Scriptblock]::Create((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/dwesterman/Convert-SplitNameValue/main/Convert-SplitNameValue.psm1")))
 ```
 
 # Function "ConvertTo-SplitNameValue"
